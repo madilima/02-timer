@@ -107,6 +107,9 @@ export const BaseCountdownButton = styled.button`
     cursor: not-allowed;
   }
 
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme['green-700']};
+  }
 `
 
 export const StartCountdownButton = styled(BaseCountdownButton)`
@@ -119,7 +122,7 @@ export const StartCountdownButton = styled(BaseCountdownButton)`
 
 export const StopCountdownButton = styled(BaseCountdownButton)`
   background: ${(props) => props.theme["red-500"]};
- 
+
   &:not(:disabled):hover {
     background: ${(props) => props.theme["red-700"]};
   }
