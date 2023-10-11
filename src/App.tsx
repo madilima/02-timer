@@ -9,7 +9,7 @@ import { CyclesContextProvider } from "./Contexts/CyclesContext"
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/02-timer">
         <CyclesContextProvider>
           <Router />
         </CyclesContextProvider>
